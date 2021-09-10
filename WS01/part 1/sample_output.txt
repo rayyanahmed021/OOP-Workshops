@@ -1,16 +1,18 @@
 Command Line:
-1: ws
-2: monday.txt
-3: tuesday.txt
+--------------------------
+  1: ws
+  2: monday.txt
+  3: tuesday.txt
+--------------------------
 
 --------------------
     Day 1
 --------------------
- 1. 00:02:55 => Computer Starting
- 2. 00:02:55 => Computer Starting
+ 1. 00:02:55 => Computer starts
+ 2. 00:02:55 => Computer starts
  3. | No Event |
- 4. 01:15:34 => User logging in
- 5. 01:20:09 => User logging in
+ 4. 01:15:34 => User logs in
+ 5. 01:20:09 => User logs in
  6. 09:01:04 => Browser closed
  7. 17:33:33 => User checks email
 --------------------
