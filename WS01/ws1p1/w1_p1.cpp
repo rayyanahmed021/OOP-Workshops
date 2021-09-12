@@ -1,7 +1,16 @@
 // Workshop 1 - Linkage, Storage Duration, Namespaces, and OS Interface
 // Cornel - 2020/01/08
 // Chris - 2021/01/14
-
+/*
+====================================
+Name: Rayyan Ahmed
+Date: 11/09/2021
+Email: rahmed102@myseneca.ca
+Student ID: 140961202
+=====================================
+I have done all the coding by myself and only copied the code that
+my professor provided to complete my workshops and assignments.
+*/
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -21,7 +30,7 @@ codes
 
 // TODO: write the prototype for the main function
 //         to accept command line arguments
-
+int main(char event)
 {
 	std::cout << "Command Line:\n";
 	std::cout << "--------------------------\n";
