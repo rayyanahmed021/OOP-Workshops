@@ -49,17 +49,32 @@ namespace sdds
 
 	void Event::set(char* eve)
 	{
+		delete[] m_description;
 		if (eve && eve[0] != '\0')
 		{
-			delete[] m_description;
 			m_description = new char[strlen(eve) + 1];
 			strcpy(m_description, eve);
 		}
 		else
 		{
 			m_description = nullptr;
-			m_time = g_sysClock;
 		}
+		m_time = g_sysClock;
+	}
+	Event::Event(const Event& eve)
+	{
+		*this = eve;
+	}
+	Event& Event::operator=(const Event& eve)
+	{
+		if (this != &eve && eve.m_description)
+		{
+			delete[] m_description;
+			m_description = new char[strlen(eve.m_description) + 1];
+			strcpy(m_description, eve.m_description);
+			m_time = eve.m_time;
+		}
+		return *this;
 	}
 	Event::~Event()
 	{

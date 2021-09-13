@@ -25,7 +25,8 @@ namespace sdds
 		Event();
 		void display();
 		void set(char* event = nullptr);
-		//Event& operator = (const Event* eve);
+		Event(const Event& eve);
+		Event& operator = (const Event& eve);
 		~Event();
 	};
 }
