@@ -23,8 +23,8 @@ namespace sdds
 		unsigned int m_time; //seconds
 	public:
 		Event();
-		void display();
-		void set(char* event = nullptr);
+		void display() const;
+		void set(const char* event = nullptr);
 		Event(const Event& eve);
 		Event& operator = (const Event& eve);
 		~Event();

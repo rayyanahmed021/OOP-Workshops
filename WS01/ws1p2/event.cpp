@@ -24,7 +24,7 @@ namespace sdds
 		m_time = g_sysClock;
 	}
 
-	void Event::display()
+	void Event::display()const
 	{
 		static int counter = 1;
 		int time = 0;
@@ -47,13 +47,13 @@ namespace sdds
 
 	}
 
-	void Event::set(char* eve)
+	void Event::set(const char* event)
 	{
 		delete[] m_description;
-		if (eve && eve[0] != '\0')
+		if (event && event[0] != '\0')
 		{
-			m_description = new char[strlen(eve) + 1];
-			strcpy(m_description, eve);
+			m_description = new char[strlen(event) + 1];
+			strcpy(m_description, event);
 		}
 		else
 		{
